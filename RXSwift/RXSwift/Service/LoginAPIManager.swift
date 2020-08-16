@@ -17,7 +17,7 @@ protocol LoginApiService: LoginApiServiceProtocol { }
 
 final class LoginApi: LoginApiServiceProtocol {
     private struct Constants {
-        static let apiKey = "3f093e78fd47d26523d784196a33f00a"
+        static let apiKey = "497855a1e0ea28eea738a76c62e17413"
     }
 
     private let httpClient: HTTPClientProvider
