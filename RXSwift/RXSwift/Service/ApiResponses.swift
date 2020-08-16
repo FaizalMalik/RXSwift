@@ -8,17 +8,13 @@
 
 import Foundation
 
-
-
-
-
 struct LoginResponse: Decodable {
     let success: Bool
 }
 
 struct AuthTokenResponse: Decodable {
     let requestToken: String
-    
+
     enum CodingKeys: String, CodingKey {
         case requestToken = "request_token"
     }

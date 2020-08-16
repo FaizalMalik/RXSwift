@@ -20,34 +20,34 @@ final class LoginViewModel: ViewModelType {
         let password: Driver<String>
         let loginTaps: Signal<Void>
     }
-    
+
     struct Output {
         let enabled: Driver<Bool>
         let loading: Driver<Bool>
         let result: Driver<LoginResult>
     }
-    
+
     struct Dependencies {
         let api: LoginApiServiceProtocol
         let navigator: LoginNavigator
     }
-    
+
     private let dependencies: Dependencies
-    
+
     init(dependencies: Dependencies) {
         self.dependencies = dependencies
     }
-    
+
     func transform(input: LoginViewModel.Input) -> LoginViewModel.Output {
         let isUsernameValid = input.username
             .map { $0.count > 0 }
         let isPasswordValid = input.password
             .map { $0.count >= 4 }
         let enabled = Driver.combineLatest(isUsernameValid, isPasswordValid) { $0 && $1 }
-        
+
         let loadingIndicator = ActivityIndicator()
         let loading = loadingIndicator.asDriver()
-        
+
         let usernameAndPassword = Driver.combineLatest(input.username, input.password) { ($0, $1 )}
             .asObservable()
         let result = input.loginTaps
@@ -65,7 +65,7 @@ final class LoginViewModel: ViewModelType {
                     let strongSelf = self else { return }
                 strongSelf.dependencies.navigator.toMain()
             })
-        
+
         return Output(enabled: enabled,
                       loading: loading,
                       result: result)

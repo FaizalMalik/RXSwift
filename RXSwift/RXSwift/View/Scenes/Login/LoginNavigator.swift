@@ -14,13 +14,13 @@ protocol LoginNavigatable {
 
 final class LoginNavigator {
     private let navigationController: UINavigationController
-    
+
     init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
-    
+
     func toMain() {
-        
+
         navigationController.dismiss(animated: true, completion: nil)
     }
 }

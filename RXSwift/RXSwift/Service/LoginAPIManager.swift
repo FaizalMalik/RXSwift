@@ -9,7 +9,6 @@
 import RxSwift
 import RxCocoa
 
-
 protocol LoginApiServiceProtocol {
     func login(withUsername username: String, password: String) -> Observable<Bool>
 }
@@ -20,14 +19,13 @@ final class LoginApi: LoginApiServiceProtocol {
     private struct Constants {
         static let apiKey = "3f093e78fd47d26523d784196a33f00a"
     }
-    
+
     private let httpClient: HTTPClientProvider
-    
+
     init(httpClient: HTTPClientProvider = HTTPClient()) {
         self.httpClient = httpClient
     }
-    
-    
+
     func login(withUsername username: String, password: String) -> Observable<Bool> {
         return fetchAuthToken()
             .flatMap { [weak self] (token: String?) -> Observable<Data?> in
@@ -44,7 +42,6 @@ final class LoginApi: LoginApiServiceProtocol {
                 return response.success
             }
     }
-
 
     private func fetchAuthToken() -> Observable<String?> {
         return httpClient.get(url: "https://api.themoviedb.org/3/authentication/token/new?api_key=\(Constants.apiKey)")

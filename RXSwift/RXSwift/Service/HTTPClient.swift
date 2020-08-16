@@ -22,7 +22,7 @@ final class HTTPClient: HTTPClientProvider {
             .map { Optional.init($0) }
             .catchErrorJustReturn(nil)
     }
-    
+
     func post(url: String, params: [String: Any]) -> Observable<Data?> {
         guard let url = URL(string: url) else { return Observable.empty() }
         var request = URLRequest(url: url)
