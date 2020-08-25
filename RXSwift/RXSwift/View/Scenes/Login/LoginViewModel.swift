@@ -63,6 +63,7 @@ final class LoginViewModel: ViewModelType {
             .do(onNext: { [weak self] loginResult in
                 guard loginResult == LoginResult.success,
                     let strongSelf = self else { return }
+                print("Login success")
                 strongSelf.dependencies.navigator.toMain()
             })
 

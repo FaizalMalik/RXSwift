@@ -20,7 +20,12 @@ final class LoginNavigator {
     }
 
     func toMain() {
+        DispatchQueue.main.async {
+            let homeVc = UIStoryboard.main.homeVC
+                homeVc.modalPresentationStyle = .fullScreen
 
-        navigationController.dismiss(animated: true, completion: nil)
+                self.navigationController.present(homeVc, animated: true, completion: nil)
+        }
+
     }
 }

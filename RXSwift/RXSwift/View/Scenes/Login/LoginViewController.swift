@@ -50,8 +50,8 @@ class LoginViewController: UIViewController {
                 .drive(onNext: { [weak self] enabled in
                     guard let strongSelf = self else { return }
                     strongSelf.loginButton.backgroundColor = enabled ?
-                        UIColor(red: 255/255, green: 185/255, blue: 45/255, alpha: 1.0) :
-                        UIColor.lightGray
+                    .baseColor :
+                    .fadeBaseColor
                 })
                 .disposed(by: disposeBag)
 

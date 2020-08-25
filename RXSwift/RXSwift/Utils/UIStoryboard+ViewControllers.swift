@@ -15,11 +15,17 @@ extension UIStoryboard {
 }
 
 extension UIStoryboard {
-    var loginViewController: LoginViewController {
+    var loginVC: LoginViewController {
         guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "LoginViewController") as? LoginViewController else {
             fatalError("LoginViewController couldn't be found in Storyboard file")
         }
         return vc
     }
 
+    var homeVC: HomeViewController {
+        guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "HomeViewController") as? HomeViewController else {
+            fatalError("HomeViewController couldn't be found in Storyboard file")
+        }
+        return vc
+    }
 }

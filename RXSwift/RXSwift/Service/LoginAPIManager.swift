@@ -16,9 +16,7 @@ protocol LoginApiServiceProtocol {
 protocol LoginApiService: LoginApiServiceProtocol { }
 
 final class LoginApi: LoginApiServiceProtocol {
-    private struct Constants {
-        static let apiKey = "497855a1e0ea28eea738a76c62e17413"
-    }
+  
 
     private let httpClient: HTTPClientProvider
 
@@ -27,30 +25,12 @@ final class LoginApi: LoginApiServiceProtocol {
     }
 
     func login(withUsername username: String, password: String) -> Observable<Bool> {
-        return fetchAuthToken()
-            .flatMap { [weak self] (token: String?) -> Observable<Data?> in
-                guard let strongSelf = self,
-                    let token = token else { return Observable.just(nil) }
-                return strongSelf.httpClient.post(url: "https://api.themoviedb.org/3/authentication/token/validate_with_login?api_key=\(Constants.apiKey)",
-                    params: ["username": username, "password": password, "request_token": token])
-            }
-            .map { (data: Data?) -> Bool in
-                guard let data = data,
-                    let response = try? JSONDecoder().decode(LoginResponse.self, from: data) else {
-                        return false
-                }
-                return response.success
-            }
+      
+        //Implement the Api call here
+        return Observable.just(true)
+        
+      
     }
 
-    private func fetchAuthToken() -> Observable<String?> {
-        return httpClient.get(url: "https://api.themoviedb.org/3/authentication/token/new?api_key=\(Constants.apiKey)")
-                .map { data -> String? in
-                    guard let data = data,
-                        let response = try? JSONDecoder().decode(AuthTokenResponse.self, from: data) else {
-                            return nil
-                    }
-                    return response.requestToken
-                }
-    }
+    
 }

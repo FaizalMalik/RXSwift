@@ -17,7 +17,7 @@ final class App {
         let loginNavigator = LoginNavigator(navigationController: loginNavigationController)
 
         let loginViewModel = LoginViewModel(dependencies: LoginViewModel.Dependencies(api: LoginApi(), navigator: loginNavigator))
-        let loginViewController = UIStoryboard.main.loginViewController
+        let loginViewController = UIStoryboard.main.loginVC
         loginViewController.viewModel = loginViewModel
         loginNavigationController.viewControllers = [loginViewController]
 
