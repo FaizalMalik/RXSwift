@@ -8,5 +8,5 @@ target 'RxSwiftMVVM' do
   # Pods for RxSwift
   pod 'RxSwift'
   pod 'RxCocoa'
-  pod 'Nuke'
+   
 end

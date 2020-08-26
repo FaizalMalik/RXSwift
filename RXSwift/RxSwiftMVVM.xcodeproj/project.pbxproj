@@ -7,12 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		962225A0D9A090940D589EC2 /* Pods_RxSwift.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 28A5EA29F8108EE7C8545933 /* Pods_RxSwift.framework */; };
+		A6D8620C69CB35DB55CABA96 /* Pods_RxSwiftMVVM.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4A8EE8C9E04FEECF975F929F /* Pods_RxSwiftMVVM.framework */; };
 		BF61675223E054170059ACBA /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61675123E054170059ACBA /* LoginViewModel.swift */; };
 		BF61675423E0541B0059ACBA /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61675323E0541B0059ACBA /* LoginNavigator.swift */; };
 		BF61675723E0548B0059ACBA /* ViewModelType.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61675623E0548B0059ACBA /* ViewModelType.swift */; };
 		BF61675923E055620059ACBA /* HTTPClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61675823E055620059ACBA /* HTTPClient.swift */; };
-		BF61675B23E055670059ACBA /* LoginAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61675A23E055670059ACBA /* LoginAPIManager.swift */; };
 		BF61675F23E057550059ACBA /* ActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61675E23E057550059ACBA /* ActivityIndicator.swift */; };
 		BF61676123E05B800059ACBA /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61676023E05B800059ACBA /* UIViewController+Rx.swift */; };
 		BF61676323E05B910059ACBA /* UIStoryboard+ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61676223E05B910059ACBA /* UIStoryboard+ViewControllers.swift */; };
@@ -23,18 +22,31 @@
 		BFD3F99123DF280E00D3650C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD3F98F23DF280E00D3650C /* Main.storyboard */; };
 		BFD3F99323DF280F00D3650C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = BFD3F99223DF280F00D3650C /* Assets.xcassets */; };
 		BFD3F99623DF280F00D3650C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = BFD3F99423DF280F00D3650C /* LaunchScreen.storyboard */; };
-		BFF9D59C24F4F541004ABEEE /* Define.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D59B24F4F541004ABEEE /* Define.swift */; };
+		BFF9D59C24F4F541004ABEEE /* Helper.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D59B24F4F541004ABEEE /* Helper.swift */; };
 		BFF9D59F24F4FB53004ABEEE /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D59E24F4FB53004ABEEE /* HomeViewController.swift */; };
+		BFF9D5BF24F51036004ABEEE /* FoodMenuNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5B524F51036004ABEEE /* FoodMenuNavigator.swift */; };
+		BFF9D5C024F51036004ABEEE /* FoodMenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5B624F51036004ABEEE /* FoodMenuViewController.swift */; };
+		BFF9D5C124F51036004ABEEE /* FoodMenuViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5B724F51036004ABEEE /* FoodMenuViewModel.swift */; };
+		BFF9D5C224F51036004ABEEE /* CarouselSectionCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF9D5B924F51036004ABEEE /* CarouselSectionCell.xib */; };
+		BFF9D5C324F51036004ABEEE /* FoodMenuMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5BA24F51036004ABEEE /* FoodMenuMainView.swift */; };
+		BFF9D5C424F51036004ABEEE /* FoodItemCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5BB24F51036004ABEEE /* FoodItemCell.swift */; };
+		BFF9D5C524F51036004ABEEE /* FoodItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF9D5BC24F51036004ABEEE /* FoodItemCell.xib */; };
+		BFF9D5C624F51036004ABEEE /* FoodMenuMainView.xib in Resources */ = {isa = PBXBuildFile; fileRef = BFF9D5BD24F51036004ABEEE /* FoodMenuMainView.xib */; };
+		BFF9D5C724F51036004ABEEE /* CarouselSectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5BE24F51036004ABEEE /* CarouselSectionCell.swift */; };
+		BFF9D5D424F510A4004ABEEE /* FoodieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5D324F510A4004ABEEE /* FoodieApi.swift */; };
+		BFF9D5D624F51990004ABEEE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF9D5D524F51990004ABEEE /* menu.json */; };
+		BFF9D5D824F519B0004ABEEE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5D724F519B0004ABEEE /* Menu.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		04D6BABE4CF27730AE2B0FFD /* Pods-RxSwift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift.debug.xcconfig"; path = "Target Support Files/Pods-RxSwift/Pods-RxSwift.debug.xcconfig"; sourceTree = "<group>"; };
-		28A5EA29F8108EE7C8545933 /* Pods_RxSwift.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		4A8EE8C9E04FEECF975F929F /* Pods_RxSwiftMVVM.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RxSwiftMVVM.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7361032F7F74C459BA8FC3D1 /* Pods-RxSwiftMVVM.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVM.release.xcconfig"; path = "Target Support Files/Pods-RxSwiftMVVM/Pods-RxSwiftMVVM.release.xcconfig"; sourceTree = "<group>"; };
+		84504C3FA60A31A076BE5E91 /* Pods-RxSwiftMVVM.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwiftMVVM.debug.xcconfig"; path = "Target Support Files/Pods-RxSwiftMVVM/Pods-RxSwiftMVVM.debug.xcconfig"; sourceTree = "<group>"; };
 		BF61675123E054170059ACBA /* LoginViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		BF61675323E0541B0059ACBA /* LoginNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
 		BF61675623E0548B0059ACBA /* ViewModelType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewModelType.swift; sourceTree = "<group>"; };
 		BF61675823E055620059ACBA /* HTTPClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HTTPClient.swift; sourceTree = "<group>"; };
-		BF61675A23E055670059ACBA /* LoginAPIManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginAPIManager.swift; sourceTree = "<group>"; };
 		BF61675E23E057550059ACBA /* ActivityIndicator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ActivityIndicator.swift; sourceTree = "<group>"; };
 		BF61676023E05B800059ACBA /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		BF61676223E05B910059ACBA /* UIStoryboard+ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ViewControllers.swift"; sourceTree = "<group>"; };
@@ -47,8 +59,20 @@
 		BFD3F99223DF280F00D3650C /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		BFD3F99523DF280F00D3650C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		BFD3F99723DF280F00D3650C /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		BFF9D59B24F4F541004ABEEE /* Define.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Define.swift; path = RXSwift/Utils/Define.swift; sourceTree = SOURCE_ROOT; };
+		BFF9D59B24F4F541004ABEEE /* Helper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = Helper.swift; path = RXSwift/Utils/Helper.swift; sourceTree = SOURCE_ROOT; };
 		BFF9D59E24F4FB53004ABEEE /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = HomeViewController.swift; path = RXSwift/View/Scenes/Home/HomeViewController.swift; sourceTree = SOURCE_ROOT; };
+		BFF9D5B524F51036004ABEEE /* FoodMenuNavigator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuNavigator.swift; sourceTree = "<group>"; };
+		BFF9D5B624F51036004ABEEE /* FoodMenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewController.swift; sourceTree = "<group>"; };
+		BFF9D5B724F51036004ABEEE /* FoodMenuViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuViewModel.swift; sourceTree = "<group>"; };
+		BFF9D5B924F51036004ABEEE /* CarouselSectionCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CarouselSectionCell.xib; sourceTree = "<group>"; };
+		BFF9D5BA24F51036004ABEEE /* FoodMenuMainView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodMenuMainView.swift; sourceTree = "<group>"; };
+		BFF9D5BB24F51036004ABEEE /* FoodItemCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodItemCell.swift; sourceTree = "<group>"; };
+		BFF9D5BC24F51036004ABEEE /* FoodItemCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodItemCell.xib; sourceTree = "<group>"; };
+		BFF9D5BD24F51036004ABEEE /* FoodMenuMainView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FoodMenuMainView.xib; sourceTree = "<group>"; };
+		BFF9D5BE24F51036004ABEEE /* CarouselSectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CarouselSectionCell.swift; sourceTree = "<group>"; };
+		BFF9D5D324F510A4004ABEEE /* FoodieApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodieApi.swift; sourceTree = "<group>"; };
+		BFF9D5D524F51990004ABEEE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
+		BFF9D5D724F519B0004ABEEE /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		F68EF552A7D40C476FB16CDA /* Pods-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-RxSwift/Pods-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -57,7 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				962225A0D9A090940D589EC2 /* Pods_RxSwift.framework in Frameworks */,
+				A6D8620C69CB35DB55CABA96 /* Pods_RxSwiftMVVM.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -69,22 +93,17 @@
 			children = (
 				04D6BABE4CF27730AE2B0FFD /* Pods-RxSwift.debug.xcconfig */,
 				F68EF552A7D40C476FB16CDA /* Pods-RxSwift.release.xcconfig */,
+				84504C3FA60A31A076BE5E91 /* Pods-RxSwiftMVVM.debug.xcconfig */,
+				7361032F7F74C459BA8FC3D1 /* Pods-RxSwiftMVVM.release.xcconfig */,
 			);
 			path = Pods;
-			sourceTree = "<group>";
-		};
-		BF61674A23E052500059ACBA /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		BF61674B23E0525C0059ACBA /* Service */ = {
 			isa = PBXGroup;
 			children = (
 				BF61675823E055620059ACBA /* HTTPClient.swift */,
-				BF61675A23E055670059ACBA /* LoginAPIManager.swift */,
+				BFF9D5D324F510A4004ABEEE /* FoodieApi.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -101,6 +120,7 @@
 		BF61674E23E052AB0059ACBA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BFF9D5B424F51036004ABEEE /* FoodMenu */,
 				BFF9D59D24F4FAE0004ABEEE /* Home */,
 				BF61675023E053FF0059ACBA /* Login */,
 			);
@@ -128,11 +148,12 @@
 		BF61675523E054820059ACBA /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				BFF9D5D524F51990004ABEEE /* menu.json */,
 				BF61676223E05B910059ACBA /* UIStoryboard+ViewControllers.swift */,
 				BF61676023E05B800059ACBA /* UIViewController+Rx.swift */,
 				BF61675E23E057550059ACBA /* ActivityIndicator.swift */,
 				BF61675623E0548B0059ACBA /* ViewModelType.swift */,
-				BFF9D59B24F4F541004ABEEE /* Define.swift */,
+				BFF9D59B24F4F541004ABEEE /* Helper.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -161,10 +182,10 @@
 				BFD3F98923DF280E00D3650C /* AppDelegate.swift */,
 				BF61676423E05D190059ACBA /* App.swift */,
 				BFD3F98B23DF280E00D3650C /* SceneDelegate.swift */,
+				BFF9D5CA24F5107E004ABEEE /* Models */,
 				BF61675523E054820059ACBA /* Utils */,
 				BF61674C23E052820059ACBA /* View */,
 				BF61674B23E0525C0059ACBA /* Service */,
-				BF61674A23E052500059ACBA /* Models */,
 				BFD3F99223DF280F00D3650C /* Assets.xcassets */,
 				BFD3F99423DF280F00D3650C /* LaunchScreen.storyboard */,
 				BFD3F99723DF280F00D3650C /* Info.plist */,
@@ -180,10 +201,43 @@
 			path = Home;
 			sourceTree = "<group>";
 		};
+		BFF9D5B424F51036004ABEEE /* FoodMenu */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9D5B524F51036004ABEEE /* FoodMenuNavigator.swift */,
+				BFF9D5B624F51036004ABEEE /* FoodMenuViewController.swift */,
+				BFF9D5B724F51036004ABEEE /* FoodMenuViewModel.swift */,
+				BFF9D5B824F51036004ABEEE /* Views */,
+			);
+			path = FoodMenu;
+			sourceTree = "<group>";
+		};
+		BFF9D5B824F51036004ABEEE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9D5B924F51036004ABEEE /* CarouselSectionCell.xib */,
+				BFF9D5BA24F51036004ABEEE /* FoodMenuMainView.swift */,
+				BFF9D5BB24F51036004ABEEE /* FoodItemCell.swift */,
+				BFF9D5BC24F51036004ABEEE /* FoodItemCell.xib */,
+				BFF9D5BD24F51036004ABEEE /* FoodMenuMainView.xib */,
+				BFF9D5BE24F51036004ABEEE /* CarouselSectionCell.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		BFF9D5CA24F5107E004ABEEE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9D5D724F519B0004ABEEE /* Menu.swift */,
+			);
+			name = Models;
+			path = Models/Models;
+			sourceTree = "<group>";
+		};
 		DDF8F281AD928E34E1E9D898 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				28A5EA29F8108EE7C8545933 /* Pods_RxSwift.framework */,
+				4A8EE8C9E04FEECF975F929F /* Pods_RxSwiftMVVM.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -248,9 +302,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BFF9D5C624F51036004ABEEE /* FoodMenuMainView.xib in Resources */,
 				BFD3F99623DF280F00D3650C /* LaunchScreen.storyboard in Resources */,
 				BFD3F99323DF280F00D3650C /* Assets.xcassets in Resources */,
 				BFD3F99123DF280E00D3650C /* Main.storyboard in Resources */,
+				BFF9D5C224F51036004ABEEE /* CarouselSectionCell.xib in Resources */,
+				BFF9D5C524F51036004ABEEE /* FoodItemCell.xib in Resources */,
+				BFF9D5D624F51990004ABEEE /* menu.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,15 +321,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwift/Pods-RxSwift-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMVVM/Pods-RxSwiftMVVM-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RxSwift/Pods-RxSwift-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+				"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMVVM/Pods-RxSwiftMVVM-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwift/Pods-RxSwift-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RxSwiftMVVM/Pods-RxSwiftMVVM-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 		6FC2D7F236ADD226D1B2141F /* [CP] Check Pods Manifest.lock */ = {
@@ -289,7 +347,7 @@
 			outputFileListPaths = (
 			);
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-RxSwift-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-RxSwiftMVVM-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -306,17 +364,24 @@
 				BF61676523E05D190059ACBA /* App.swift in Sources */,
 				BF61675423E0541B0059ACBA /* LoginNavigator.swift in Sources */,
 				BF61676323E05B910059ACBA /* UIStoryboard+ViewControllers.swift in Sources */,
-				BF61675B23E055670059ACBA /* LoginAPIManager.swift in Sources */,
+				BFF9D5D824F519B0004ABEEE /* Menu.swift in Sources */,
+				BFF9D5D424F510A4004ABEEE /* FoodieApi.swift in Sources */,
 				BF61675223E054170059ACBA /* LoginViewModel.swift in Sources */,
+				BFF9D5C024F51036004ABEEE /* FoodMenuViewController.swift in Sources */,
+				BFF9D5BF24F51036004ABEEE /* FoodMenuNavigator.swift in Sources */,
 				BFF9D59F24F4FB53004ABEEE /* HomeViewController.swift in Sources */,
 				BF61675723E0548B0059ACBA /* ViewModelType.swift in Sources */,
-				BFF9D59C24F4F541004ABEEE /* Define.swift in Sources */,
+				BFF9D59C24F4F541004ABEEE /* Helper.swift in Sources */,
+				BFF9D5C324F51036004ABEEE /* FoodMenuMainView.swift in Sources */,
+				BFF9D5C724F51036004ABEEE /* CarouselSectionCell.swift in Sources */,
 				BF61675923E055620059ACBA /* HTTPClient.swift in Sources */,
 				BF61675F23E057550059ACBA /* ActivityIndicator.swift in Sources */,
 				BFD3F98E23DF280E00D3650C /* LoginViewController.swift in Sources */,
+				BFF9D5C424F51036004ABEEE /* FoodItemCell.swift in Sources */,
 				BFD3F98A23DF280E00D3650C /* AppDelegate.swift in Sources */,
 				BF61676123E05B800059ACBA /* UIViewController+Rx.swift in Sources */,
 				BFD3F98C23DF280E00D3650C /* SceneDelegate.swift in Sources */,
+				BFF9D5C124F51036004ABEEE /* FoodMenuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -458,7 +523,7 @@
 		};
 		BFD3F99B23DF280F00D3650C /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 04D6BABE4CF27730AE2B0FFD /* Pods-RxSwift.debug.xcconfig */;
+			baseConfigurationReference = 84504C3FA60A31A076BE5E91 /* Pods-RxSwiftMVVM.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -476,7 +541,7 @@
 		};
 		BFD3F99C23DF280F00D3650C /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = F68EF552A7D40C476FB16CDA /* Pods-RxSwift.release.xcconfig */;
+			baseConfigurationReference = 7361032F7F74C459BA8FC3D1 /* Pods-RxSwiftMVVM.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

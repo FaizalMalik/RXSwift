@@ -21,10 +21,36 @@ final class LoginNavigator {
 
     func toMain() {
         DispatchQueue.main.async {
-            let homeVc = UIStoryboard.main.homeVC
-                homeVc.modalPresentationStyle = .fullScreen
+         
+            
 
-                self.navigationController.present(homeVc, animated: true, completion: nil)
+                 let foodMenuNavigationController = UINavigationController()
+                        let foodMenuNavigator = FoodMenuNavigator(navigationController: foodMenuNavigationController)
+                        let foodMenuViewModel = FoodMenuViewModel(dependencies: FoodMenuViewModel.Dependencies(api: FoodieApi(), navigator: foodMenuNavigator))
+                        let foodMenuViewController = UIStoryboard.main.foodMenuVC
+                        foodMenuViewController.viewModel = foodMenuViewModel
+           
+        
+                        let tabBarController = UITabBarController()
+                        tabBarController.tabBar.barTintColor = UIColor(red: 18/255, green: 18/255, blue: 18/255, alpha: 1.0)
+                        tabBarController.tabBar.tintColor = .white
+        
+                        foodMenuNavigationController.tabBarItem = UITabBarItem(title: "FoodMenu", image: nil, selectedImage: nil)
+                        foodMenuNavigationController.viewControllers = [foodMenuViewController]
+        
+        
+        
+                        tabBarController.viewControllers = [
+                            foodMenuNavigationController
+        
+                        ]
+            tabBarController.modalPresentationStyle = .fullScreen
+                      
+        self.navigationController.present(tabBarController, animated: true, completion: nil)
+
+        
+        
+        
         }
 
     }

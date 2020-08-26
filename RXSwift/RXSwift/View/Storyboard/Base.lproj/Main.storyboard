@@ -128,38 +128,6 @@
             </objects>
             <point key="canvasLocation" x="128.98550724637681" y="-17.410714285714285"/>
         </scene>
-        <!--Item 2-->
-        <scene sceneID="rq7-Og-Qbw">
-            <objects>
-                <viewController id="oIL-r7-rin" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="7eH-8j-iX2">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="Vt6-8A-ysE"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Q8y-zJ-m9C"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="3ng-wP-UzA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1865" y="-12"/>
-        </scene>
-        <!--Item 1-->
-        <scene sceneID="4cI-Vx-Hzn">
-            <objects>
-                <viewController id="455-Ep-65d" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="bdW-b2-Vkp">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="5jS-NT-5O2"/>
-                    </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="f1v-nw-Gce"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="ehk-XG-KNt" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1865" y="-660"/>
-        </scene>
         <!--Home View Controller-->
         <scene sceneID="5TY-Gy-s5S">
             <objects>
@@ -169,14 +137,40 @@
                         <autoresizingMask key="autoresizingMask"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </tabBar>
-                    <connections>
-                        <segue destination="455-Ep-65d" kind="relationship" relationship="viewControllers" id="wcW-yA-K1z"/>
-                        <segue destination="oIL-r7-rin" kind="relationship" relationship="viewControllers" id="0Fn-eF-HBa"/>
-                    </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bPe-DA-8ui" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="959" y="-32"/>
+        </scene>
+        <!--Food Menu View Controller-->
+        <scene sceneID="KEQ-fp-eeh">
+            <objects>
+                <viewController storyboardIdentifier="FoodMenuViewController" id="Bgl-R9-Xmk" customClass="FoodMenuViewController" customModule="RxSwiftMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="noD-K3-hkk">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kd3-Mu-ld0" customClass="FoodMenuMainView" customModule="RxSwiftMVVM" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kd3-Mu-ld0" firstAttribute="leading" secondItem="fjh-XI-gjt" secondAttribute="leading" id="IfL-jD-GxU"/>
+                            <constraint firstItem="fjh-XI-gjt" firstAttribute="bottom" secondItem="kd3-Mu-ld0" secondAttribute="bottom" id="XEy-aT-3Ve"/>
+                            <constraint firstItem="kd3-Mu-ld0" firstAttribute="top" secondItem="fjh-XI-gjt" secondAttribute="top" id="dTQ-JY-vVz"/>
+                            <constraint firstItem="fjh-XI-gjt" firstAttribute="trailing" secondItem="kd3-Mu-ld0" secondAttribute="trailing" id="pk6-Vr-ME8"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="fjh-XI-gjt"/>
+                    </view>
+                    <connections>
+                        <outlet property="carouselsView" destination="kd3-Mu-ld0" id="Bdk-Hq-LE1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1kp-Mj-0Bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1591" y="-182"/>
         </scene>
     </scenes>
     <resources>

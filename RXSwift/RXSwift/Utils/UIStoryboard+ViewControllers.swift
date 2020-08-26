@@ -28,4 +28,11 @@ extension UIStoryboard {
         }
         return vc
     }
+    var foodMenuVC: FoodMenuViewController {
+        guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "FoodMenuViewController") as? FoodMenuViewController else {
+            fatalError("FoodMenuViewController couldn't be found in Storyboard file")
+        }
+        return vc
+    }
+
 }

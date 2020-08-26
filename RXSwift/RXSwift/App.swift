@@ -16,13 +16,14 @@ final class App {
         let loginNavigationController = UINavigationController()
         let loginNavigator = LoginNavigator(navigationController: loginNavigationController)
 
-        let loginViewModel = LoginViewModel(dependencies: LoginViewModel.Dependencies(api: LoginApi(), navigator: loginNavigator))
+        let loginViewModel = LoginViewModel(dependencies: LoginViewModel.Dependencies(api: FoodieApi(), navigator: loginNavigator))
         let loginViewController = UIStoryboard.main.loginVC
         loginViewController.viewModel = loginViewModel
         loginNavigationController.viewControllers = [loginViewController]
 
         window.rootViewController = loginNavigationController
         window.makeKeyAndVisible()
+        
 
     }
 }

@@ -28,7 +28,7 @@ final class LoginViewModel: ViewModelType {
     }
 
     struct Dependencies {
-        let api: LoginApiServiceProtocol
+        let api: FoodieApiProvider
         let navigator: LoginNavigator
     }
 
@@ -54,6 +54,7 @@ final class LoginViewModel: ViewModelType {
             .asObservable()
             .withLatestFrom(usernameAndPassword)
             .flatMapLatest { pair -> Observable<Bool> in
+                
                 let (username, password) = pair
                 return self.dependencies.api.login(withUsername: username, password: password)
                     .trackActivity(loadingIndicator)
