@@ -21,10 +21,7 @@ final class FoodMenuViewController: UIViewController {
         super.viewDidLoad()
         bindViewModel()
         
-        let menu  = Bundle.main.decode([MenuSection].self, from: "menu.json")
-        
-       let count =  menu.count
-        print("Count")
+  
     }
 
     override func viewWillAppear(_ animated: Bool) {

@@ -22,6 +22,7 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
             super.viewDidLoad()
             bindViewModel()
+        
         }
 
         override func viewWillAppear(_ animated: Bool) {

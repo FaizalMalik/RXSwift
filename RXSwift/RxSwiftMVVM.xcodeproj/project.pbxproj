@@ -36,6 +36,10 @@
 		BFF9D5D424F510A4004ABEEE /* FoodieApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5D324F510A4004ABEEE /* FoodieApi.swift */; };
 		BFF9D5D624F51990004ABEEE /* menu.json in Resources */ = {isa = PBXBuildFile; fileRef = BFF9D5D524F51990004ABEEE /* menu.json */; };
 		BFF9D5D824F519B0004ABEEE /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5D724F519B0004ABEEE /* Menu.swift */; };
+		BFF9D5EC24F78FB1004ABEEE /* BubbleTabBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5E724F78FB1004ABEEE /* BubbleTabBar.swift */; };
+		BFF9D5ED24F78FB1004ABEEE /* .gitkeep in Resources */ = {isa = PBXBuildFile; fileRef = BFF9D5E824F78FB1004ABEEE /* .gitkeep */; };
+		BFF9D5EE24F78FB1004ABEEE /* BubbleTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5E924F78FB1004ABEEE /* BubbleTabBarController.swift */; };
+		BFF9D5EF24F78FB1004ABEEE /* CBTabBarButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFF9D5EA24F78FB1004ABEEE /* CBTabBarButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -73,6 +77,11 @@
 		BFF9D5D324F510A4004ABEEE /* FoodieApi.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FoodieApi.swift; sourceTree = "<group>"; };
 		BFF9D5D524F51990004ABEEE /* menu.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = menu.json; sourceTree = "<group>"; };
 		BFF9D5D724F519B0004ABEEE /* Menu.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		BFF9D5E724F78FB1004ABEEE /* BubbleTabBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTabBar.swift; sourceTree = "<group>"; };
+		BFF9D5E824F78FB1004ABEEE /* .gitkeep */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitkeep; sourceTree = "<group>"; };
+		BFF9D5E924F78FB1004ABEEE /* BubbleTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BubbleTabBarController.swift; sourceTree = "<group>"; };
+		BFF9D5EA24F78FB1004ABEEE /* CBTabBarButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CBTabBarButton.swift; sourceTree = "<group>"; };
+		BFF9D5EB24F78FB1004ABEEE /* CBFlashyTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CBFlashyTabBarController.h; sourceTree = "<group>"; };
 		F68EF552A7D40C476FB16CDA /* Pods-RxSwift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RxSwift.release.xcconfig"; path = "Target Support Files/Pods-RxSwift/Pods-RxSwift.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -179,6 +188,7 @@
 		BFD3F98823DF280E00D3650C /* RxSwift */ = {
 			isa = PBXGroup;
 			children = (
+				BFF9D5E424F78F96004ABEEE /* Helpers */,
 				BFD3F98923DF280E00D3650C /* AppDelegate.swift */,
 				BF61676423E05D190059ACBA /* App.swift */,
 				BFD3F98B23DF280E00D3650C /* SceneDelegate.swift */,
@@ -232,6 +242,34 @@
 			);
 			name = Models;
 			path = Models/Models;
+			sourceTree = "<group>";
+		};
+		BFF9D5E424F78F96004ABEEE /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9D5E524F78FB1004ABEEE /* BubbleTabBar */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		BFF9D5E524F78FB1004ABEEE /* BubbleTabBar */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9D5E624F78FB1004ABEEE /* Classes */,
+				BFF9D5EB24F78FB1004ABEEE /* CBFlashyTabBarController.h */,
+			);
+			path = BubbleTabBar;
+			sourceTree = "<group>";
+		};
+		BFF9D5E624F78FB1004ABEEE /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BFF9D5E724F78FB1004ABEEE /* BubbleTabBar.swift */,
+				BFF9D5E824F78FB1004ABEEE /* .gitkeep */,
+				BFF9D5E924F78FB1004ABEEE /* BubbleTabBarController.swift */,
+				BFF9D5EA24F78FB1004ABEEE /* CBTabBarButton.swift */,
+			);
+			path = Classes;
 			sourceTree = "<group>";
 		};
 		DDF8F281AD928E34E1E9D898 /* Frameworks */ = {
@@ -309,6 +347,7 @@
 				BFF9D5C224F51036004ABEEE /* CarouselSectionCell.xib in Resources */,
 				BFF9D5C524F51036004ABEEE /* FoodItemCell.xib in Resources */,
 				BFF9D5D624F51990004ABEEE /* menu.json in Resources */,
+				BFF9D5ED24F78FB1004ABEEE /* .gitkeep in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -374,13 +413,16 @@
 				BFF9D59C24F4F541004ABEEE /* Helper.swift in Sources */,
 				BFF9D5C324F51036004ABEEE /* FoodMenuMainView.swift in Sources */,
 				BFF9D5C724F51036004ABEEE /* CarouselSectionCell.swift in Sources */,
+				BFF9D5EC24F78FB1004ABEEE /* BubbleTabBar.swift in Sources */,
 				BF61675923E055620059ACBA /* HTTPClient.swift in Sources */,
 				BF61675F23E057550059ACBA /* ActivityIndicator.swift in Sources */,
 				BFD3F98E23DF280E00D3650C /* LoginViewController.swift in Sources */,
 				BFF9D5C424F51036004ABEEE /* FoodItemCell.swift in Sources */,
 				BFD3F98A23DF280E00D3650C /* AppDelegate.swift in Sources */,
 				BF61676123E05B800059ACBA /* UIViewController+Rx.swift in Sources */,
+				BFF9D5EF24F78FB1004ABEEE /* CBTabBarButton.swift in Sources */,
 				BFD3F98C23DF280E00D3650C /* SceneDelegate.swift in Sources */,
+				BFF9D5EE24F78FB1004ABEEE /* BubbleTabBarController.swift in Sources */,
 				BFF9D5C124F51036004ABEEE /* FoodMenuViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

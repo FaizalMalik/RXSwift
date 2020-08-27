@@ -21,7 +21,7 @@ final class App {
         loginViewController.viewModel = loginViewModel
         loginNavigationController.viewControllers = [loginViewController]
 
-        window.rootViewController = loginNavigationController
+        window.rootViewController =  loginNavigationController
         window.makeKeyAndVisible()
         
 

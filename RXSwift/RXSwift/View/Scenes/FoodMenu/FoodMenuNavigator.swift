@@ -9,9 +9,7 @@
 import UIKit
 
 protocol FoodMenuNavigatable {
-    func navigateToMovieDetailScreen(withMovieId id: Int, api: FoodieApiProvider)
-    func navigateToPersonDetailScreen()
-    func navigateToShowDetailScreen()
+ 
 }
 
 final class FoodMenuNavigator: FoodMenuNavigatable {
@@ -21,16 +19,5 @@ final class FoodMenuNavigator: FoodMenuNavigatable {
         self.navigationController = navigationController
     }
 
-    func navigateToMovieDetailScreen(withMovieId id: Int, api: FoodieApiProvider) {
- 
-        
-    }
-
-    func navigateToPersonDetailScreen() {
-
-    }
-
-    func navigateToShowDetailScreen() {
-
-    }
+   
 }

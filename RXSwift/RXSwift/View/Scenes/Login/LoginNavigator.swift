@@ -22,8 +22,16 @@ final class LoginNavigator {
     func toMain() {
         DispatchQueue.main.async {
          
-            
+            let homeTab = self.setupTabbar()
+         self.navigationController.present(homeTab, animated: true, completion: nil)
 
+        
+        }
+
+    }
+    
+    func setupTabbar() -> BubbleTabBarController{
+        ///Food menu view controller setup
                  let foodMenuNavigationController = UINavigationController()
                         let foodMenuNavigator = FoodMenuNavigator(navigationController: foodMenuNavigationController)
                         let foodMenuViewModel = FoodMenuViewModel(dependencies: FoodMenuViewModel.Dependencies(api: FoodieApi(), navigator: foodMenuNavigator))
@@ -31,27 +39,25 @@ final class LoginNavigator {
                         foodMenuViewController.viewModel = foodMenuViewModel
            
         
-                        let tabBarController = UITabBarController()
-                        tabBarController.tabBar.barTintColor = UIColor(red: 18/255, green: 18/255, blue: 18/255, alpha: 1.0)
-                        tabBarController.tabBar.tintColor = .white
+                        let tabBarController = BubbleTabBarController()
+                        tabBarController.tabBar.barTintColor = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
+                        tabBarController.tabBar.tintColor = #colorLiteral(red: 0.3992300928, green: 0.6294427514, blue: 0.3783345222, alpha: 1)
+            
         
-                        foodMenuNavigationController.tabBarItem = UITabBarItem(title: "FoodMenu", image: nil, selectedImage: nil)
+                        foodMenuNavigationController.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home"), selectedImage: nil)
                         foodMenuNavigationController.viewControllers = [foodMenuViewController]
+          //The below two vc are sample, but need to implement features later
+               let cartVC = UIViewController()
+               cartVC.view.backgroundColor = .white
+               cartVC.tabBarItem = UITabBarItem(title: "Cart", image: #imageLiteral(resourceName: "list"), tag: 0)
         
-        
-        
-                        tabBarController.viewControllers = [
-                            foodMenuNavigationController
-        
-                        ]
-            tabBarController.modalPresentationStyle = .fullScreen
+               let orderVc = UIViewController()
+                orderVc.view.backgroundColor = .white
+                orderVc.tabBarItem = UITabBarItem(title: "Account", image: #imageLiteral(resourceName: "account"), tag: 0)
+                tabBarController.viewControllers = [
+                            foodMenuNavigationController,cartVC,orderVc]
+                tabBarController.modalPresentationStyle = .fullScreen
                       
-        self.navigationController.present(tabBarController, animated: true, completion: nil)
-
-        
-        
-        
-        }
-
+       return tabBarController
     }
 }
