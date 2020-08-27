@@ -5,9 +5,27 @@ This example uses RxSwift observables as binding mechanism between `ViewControll
 
 Note: I have a plan to develope this as a boilerplate for an ecommerce application, with feature like Login/Signup, listing items, add to cart and checkout etc.
 
+
+## Frameworks
+
+- RXSwift
+- RxCocoa
+
 # Demo 
 
 
 ![solarized dualmode](https://github.com/FaizalMalik/RXSwift/blob/main-master/src/foodie_NhnqmNXf.compressed.mov)
+
+## Installation
+
+Steps:
+
+1 : `git clone git@github.com:FaizalMalik/RXSwift.git`
+
+2 : `cd RxSwift`
+
+3 : `$ open -a Xcode RxSwiftMVVM.xcworkspace`
  
 
+## Licence
+MIT.
