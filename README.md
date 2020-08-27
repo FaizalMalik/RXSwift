@@ -13,8 +13,7 @@ Note: I have a plan to develope this as a boilerplate for an ecommerce applicati
 
 # Demo 
 
-
-![solarized dualmode](https://github.com/FaizalMalik/RXSwift/blob/main-master/src/foodie_NhnqmNXf.compressed.mov)
+![Animation](https://github.com/FaizalMalik/RXSwift/blob/main-master/src/demo.gif)
 
 ## Installation
 
