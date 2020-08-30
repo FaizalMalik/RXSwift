@@ -63,10 +63,20 @@ final class FoodMenuViewModel: ViewModelType {
             .withLatestFrom(results) { ($0, $1 ) }
             .do(onNext: { [weak self] (index: (Int, Int), res: ([MenuItem]?, [MenuItem]?, [MenuItem]?,[MenuItem]?)) in
                 guard let strongSelf = self else { return }
-                let (carouselIndex, _) = index
-                let (_, _, _, _) = res
+                let (carouselIndex, selectedIndex) = index
+                let (breakFast, mainCourse, dessert , drinks) = res
 
                 switch carouselIndex {
+                
+                case 0 :
+                    strongSelf.dependencies.navigator.navigateToItemDetailsScreen(item:(breakFast?[selectedIndex])! )
+                    case 1 :
+                                       strongSelf.dependencies.navigator.navigateToItemDetailsScreen(item:(mainCourse?[selectedIndex])! )
+                    case 2 :
+                                       strongSelf.dependencies.navigator.navigateToItemDetailsScreen(item:(dessert?[selectedIndex])! )
+                    case 3 :
+                                       strongSelf.dependencies.navigator.navigateToItemDetailsScreen(item:(drinks?[selectedIndex])! )
+
 
                 default: return
                 }

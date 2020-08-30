@@ -16,6 +16,7 @@
 		BF61676123E05B800059ACBA /* UIViewController+Rx.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61676023E05B800059ACBA /* UIViewController+Rx.swift */; };
 		BF61676323E05B910059ACBA /* UIStoryboard+ViewControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61676223E05B910059ACBA /* UIStoryboard+ViewControllers.swift */; };
 		BF61676523E05D190059ACBA /* App.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF61676423E05D190059ACBA /* App.swift */; };
+		BF7E7FFD24FBAE31005059AF /* ItemDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF7E7FFC24FBAE31005059AF /* ItemDetailViewController.swift */; };
 		BFD3F98A23DF280E00D3650C /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3F98923DF280E00D3650C /* AppDelegate.swift */; };
 		BFD3F98C23DF280E00D3650C /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3F98B23DF280E00D3650C /* SceneDelegate.swift */; };
 		BFD3F98E23DF280E00D3650C /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = BFD3F98D23DF280E00D3650C /* LoginViewController.swift */; };
@@ -55,6 +56,7 @@
 		BF61676023E05B800059ACBA /* UIViewController+Rx.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Rx.swift"; sourceTree = "<group>"; };
 		BF61676223E05B910059ACBA /* UIStoryboard+ViewControllers.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+ViewControllers.swift"; sourceTree = "<group>"; };
 		BF61676423E05D190059ACBA /* App.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = App.swift; sourceTree = "<group>"; };
+		BF7E7FFC24FBAE31005059AF /* ItemDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ItemDetailViewController.swift; path = RXSwift/View/Scenes/ItemDetailsScreen/ItemDetailViewController.swift; sourceTree = SOURCE_ROOT; };
 		BFD3F98623DF280E00D3650C /* RxSwiftMVVM.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RxSwiftMVVM.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		BFD3F98923DF280E00D3650C /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		BFD3F98B23DF280E00D3650C /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -129,6 +131,7 @@
 		BF61674E23E052AB0059ACBA /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				BF7E7FFB24FBA466005059AF /* ItemDetailsScreen */,
 				BFF9D5B424F51036004ABEEE /* FoodMenu */,
 				BFF9D59D24F4FAE0004ABEEE /* Home */,
 				BF61675023E053FF0059ACBA /* Login */,
@@ -165,6 +168,14 @@
 				BFF9D59B24F4F541004ABEEE /* Helper.swift */,
 			);
 			path = Utils;
+			sourceTree = "<group>";
+		};
+		BF7E7FFB24FBA466005059AF /* ItemDetailsScreen */ = {
+			isa = PBXGroup;
+			children = (
+				BF7E7FFC24FBAE31005059AF /* ItemDetailViewController.swift */,
+			);
+			path = ItemDetailsScreen;
 			sourceTree = "<group>";
 		};
 		BFD3F97D23DF280E00D3650C = {
@@ -420,6 +431,7 @@
 				BFF9D5C424F51036004ABEEE /* FoodItemCell.swift in Sources */,
 				BFD3F98A23DF280E00D3650C /* AppDelegate.swift in Sources */,
 				BF61676123E05B800059ACBA /* UIViewController+Rx.swift in Sources */,
+				BF7E7FFD24FBAE31005059AF /* ItemDetailViewController.swift in Sources */,
 				BFF9D5EF24F78FB1004ABEEE /* CBTabBarButton.swift in Sources */,
 				BFD3F98C23DF280E00D3650C /* SceneDelegate.swift in Sources */,
 				BFF9D5EE24F78FB1004ABEEE /* BubbleTabBarController.swift in Sources */,

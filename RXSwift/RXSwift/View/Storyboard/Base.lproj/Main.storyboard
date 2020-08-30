@@ -170,10 +170,124 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1kp-Mj-0Bh" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1591" y="-182"/>
+            <point key="canvasLocation" x="1694" y="-32"/>
+        </scene>
+        <!--Item Detail View Controller-->
+        <scene sceneID="aug-F0-aU4">
+            <objects>
+                <viewController storyboardIdentifier="ItemDetailViewController" id="ugC-GA-YDF" customClass="ItemDetailViewController" customModule="RxSwiftMVVM" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ssm-kg-5ht">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ERP-iR-N4X">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="all-out-donuts" translatesAutoresizingMaskIntoConstraints="NO" id="qp0-Pi-zy3">
+                                        <rect key="frame" x="0.0" y="0.0" width="414" height="204.5"/>
+                                    </imageView>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="c6r-ge-LkC">
+                                        <rect key="frame" x="15" y="224.5" width="384" height="137"/>
+                                        <subviews>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Joseph Gonzalez" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZE-bX-S1E">
+                                                <rect key="frame" x="15" y="20" width="349" height="19"/>
+                                                <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                                <nil key="textColor"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ty3-0m-CBr">
+                                                <rect key="frame" x="15" y="54" width="349" height="63"/>
+                                                <string key="text">Sweet, fluffy, and served piping hot, our French toast is flown in fresh every day from Maple City, Canada, which is where all maple syrup in the world comes from. And if you believe that, we have some land to sell you…</string>
+                                                <fontDescription key="fontDescription" name="ArialMT" family="Arial" pointSize="14"/>
+                                                <color key="textColor" red="0.27450980390000002" green="0.31764705879999999" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="Ty3-0m-CBr" secondAttribute="trailing" constant="20" id="3kr-7v-eLe"/>
+                                            <constraint firstAttribute="trailing" secondItem="BZE-bX-S1E" secondAttribute="trailing" constant="20" id="7Lj-Ix-klm"/>
+                                            <constraint firstItem="BZE-bX-S1E" firstAttribute="top" secondItem="c6r-ge-LkC" secondAttribute="top" constant="20" id="7fO-6I-7E4"/>
+                                            <constraint firstItem="Ty3-0m-CBr" firstAttribute="leading" secondItem="c6r-ge-LkC" secondAttribute="leading" constant="15" id="Frm-1p-k8P"/>
+                                            <constraint firstAttribute="bottom" secondItem="Ty3-0m-CBr" secondAttribute="bottom" constant="20" id="V7W-py-7g1"/>
+                                            <constraint firstItem="BZE-bX-S1E" firstAttribute="leading" secondItem="c6r-ge-LkC" secondAttribute="leading" constant="15" id="Yce-lN-ny9"/>
+                                            <constraint firstItem="Ty3-0m-CBr" firstAttribute="top" secondItem="BZE-bX-S1E" secondAttribute="bottom" constant="15" id="mDq-md-Ch5"/>
+                                        </constraints>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="1"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" red="0.33333333329999998" green="0.57254901960000004" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$ 12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YPw-M4-wd4">
+                                        <rect key="frame" x="30" y="387" width="33.5" height="19"/>
+                                        <fontDescription key="fontDescription" name="Arial-BoldMT" family="Arial" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lPA-iz-cYs">
+                                        <rect key="frame" x="271" y="376.5" width="113" height="40"/>
+                                        <color key="backgroundColor" red="0.33333333329999998" green="0.57254901960000004" blue="0.30588235289999999" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="40" id="mNQ-mU-usB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="15"/>
+                                        <inset key="contentEdgeInsets" minX="15" minY="0.0" maxX="15" maxY="0.0"/>
+                                        <state key="normal" title="Add To cart">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="15"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstItem="YPw-M4-wd4" firstAttribute="centerY" secondItem="lPA-iz-cYs" secondAttribute="centerY" id="20p-HF-vMl"/>
+                                    <constraint firstAttribute="trailing" secondItem="lPA-iz-cYs" secondAttribute="trailing" constant="30" id="62c-hL-Mdb"/>
+                                    <constraint firstItem="qp0-Pi-zy3" firstAttribute="height" secondItem="ERP-iR-N4X" secondAttribute="height" multiplier="0.25" id="DjN-SR-ekl"/>
+                                    <constraint firstItem="qp0-Pi-zy3" firstAttribute="leading" secondItem="ERP-iR-N4X" secondAttribute="leading" id="GtY-Jc-VJC"/>
+                                    <constraint firstItem="YPw-M4-wd4" firstAttribute="leading" secondItem="c6r-ge-LkC" secondAttribute="leading" constant="15" id="Rh9-Mc-X2t"/>
+                                    <constraint firstItem="qp0-Pi-zy3" firstAttribute="top" secondItem="ERP-iR-N4X" secondAttribute="top" id="UT9-jd-U4a"/>
+                                    <constraint firstAttribute="trailing" secondItem="c6r-ge-LkC" secondAttribute="trailing" constant="15" id="VXE-eh-DYN"/>
+                                    <constraint firstItem="c6r-ge-LkC" firstAttribute="leading" secondItem="ERP-iR-N4X" secondAttribute="leading" constant="15" id="hqc-vv-dAT"/>
+                                    <constraint firstItem="c6r-ge-LkC" firstAttribute="top" secondItem="qp0-Pi-zy3" secondAttribute="bottom" constant="20" id="mzI-SP-f1a"/>
+                                    <constraint firstAttribute="trailing" secondItem="qp0-Pi-zy3" secondAttribute="trailing" id="qeH-ml-aAY"/>
+                                    <constraint firstItem="lPA-iz-cYs" firstAttribute="top" secondItem="c6r-ge-LkC" secondAttribute="bottom" constant="15" id="xfx-AV-hmt"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="9xv-bR-G22" firstAttribute="bottom" secondItem="ERP-iR-N4X" secondAttribute="bottom" id="0f1-ft-AJh"/>
+                            <constraint firstItem="ERP-iR-N4X" firstAttribute="leading" secondItem="9xv-bR-G22" secondAttribute="leading" id="H9c-ri-fGD"/>
+                            <constraint firstItem="ERP-iR-N4X" firstAttribute="top" secondItem="9xv-bR-G22" secondAttribute="top" id="bhf-wK-ty6"/>
+                            <constraint firstItem="9xv-bR-G22" firstAttribute="trailing" secondItem="ERP-iR-N4X" secondAttribute="trailing" id="hrh-nJ-7Ae"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="9xv-bR-G22"/>
+                    </view>
+                    <connections>
+                        <outlet property="imgItem" destination="qp0-Pi-zy3" id="7K2-mA-v68"/>
+                        <outlet property="lblItemDesc" destination="Ty3-0m-CBr" id="xYT-3A-D8r"/>
+                        <outlet property="lblItemName" destination="BZE-bX-S1E" id="Mgm-To-zHq"/>
+                        <outlet property="lblPrice" destination="YPw-M4-wd4" id="pt0-mQ-XeJ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="tJk-9N-Muv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2546.376811594203" y="-32.142857142857139"/>
         </scene>
     </scenes>
     <resources>
+        <image name="all-out-donuts" width="414" height="207"/>
         <image name="logo" width="112.5" height="112.5"/>
     </resources>
 </document>

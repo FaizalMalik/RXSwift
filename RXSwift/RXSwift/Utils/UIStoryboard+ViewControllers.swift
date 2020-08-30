@@ -35,6 +35,11 @@ extension UIStoryboard {
         return vc
     }
 
-    
+    var itemDetail: ItemDetailViewController {
+           guard let vc = UIStoryboard.main.instantiateViewController(withIdentifier: "ItemDetailViewController") as? ItemDetailViewController else {
+               fatalError("ItemDetailViewController couldn't be found in Storyboard file")
+           }
+           return vc
+       }
 
 }

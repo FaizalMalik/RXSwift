@@ -45,6 +45,7 @@ final class LoginNavigator {
             
         
                         foodMenuNavigationController.tabBarItem = UITabBarItem(title: "Home", image: #imageLiteral(resourceName: "home"), selectedImage: nil)
+        foodMenuNavigationController.navigationBar.tintColor = #colorLiteral(red: 0.3992300928, green: 0.6294427514, blue: 0.3783345222, alpha: 1)
                         foodMenuNavigationController.viewControllers = [foodMenuViewController]
           //The below two vc are sample, but need to implement features later
                let cartVC = UIViewController()
