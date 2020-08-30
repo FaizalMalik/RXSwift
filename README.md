@@ -13,6 +13,8 @@ Note: I have a plan to develope this as a boilerplate for an ecommerce applicati
 
 # Demo 
 
+Image Assets credit : [Hacking with swift example](https://www.hackingwithswift.com/quick-start/swiftui/swiftui-tutorial-building-a-complete-project)
+
 ![Animation](https://github.com/FaizalMalik/RXSwift/blob/main-master/src/demo.mov)
 
 ## Installation
