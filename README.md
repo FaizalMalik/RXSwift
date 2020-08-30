@@ -13,7 +13,7 @@ Note: I have a plan to develope this as a boilerplate for an ecommerce applicati
 
 # Demo 
 
-![Animation](https://github.com/FaizalMalik/RXSwift/blob/main-master/src/demo.gif)
+![Animation](https://github.com/FaizalMalik/RXSwift/blob/main-master/src/demo.mov)
 
 ## Installation
 
