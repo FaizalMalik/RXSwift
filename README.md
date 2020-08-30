@@ -24,6 +24,8 @@ Steps:
 2 : `cd RxSwift`
 
 3 : `$ open -a Xcode RxSwiftMVVM.xcworkspace`
+
+note: To login, use any username and password (pwd must be more than 4 characters).
  
 
 ## Licence
